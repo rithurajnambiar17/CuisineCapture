@@ -111,4 +111,4 @@ def refresh():
     titles, ingredients, procedures = readJson()
     return render_template('CuisineCapture.html', titles=titles, ingredients=ingredients, procedures=procedures, zip=zip)
 
-app.run(debug=True, port=3001)
+# app.run(debug=True, port=3001)
