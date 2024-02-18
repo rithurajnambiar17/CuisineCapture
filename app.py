@@ -15,7 +15,7 @@ def index():
     return render_template('index.html')
 
 def split_recipes(text):
-    # Split by looking for the number, period, and "Title" keyword.           
+    # Split by looking for the number, period, and "Title" keyword.            
     # This assumes each recipe starts with "1. Title:", "2. Title:", etc.
     return re.split(r'\d+\.\s+\*\*Title:\*\*', text)
 
